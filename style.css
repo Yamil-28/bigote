@@ -1,0 +1,116 @@
+body{
+  margin:0;
+  min-height:100vh;
+  display:grid;
+  place-items:center;
+  background:#ffffff;
+}
+
+.face{
+    position: relative;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle at 50% 50%, #fff176, #fbc02d);
+    border-radius: 100%;
+}
+
+.face::before,
+.face::after{
+    content: "";
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    top: 120px;
+
+    background:
+      radial-gradient(circle at 30% 30%, white 15px, transparent 16px),
+      #5d4037;
+}
+
+.face::before{
+    left: 130px;
+}
+
+.face::after{
+    right: 160px;
+}
+
+.mouth{
+    position: absolute;
+    width: 180px;
+    height: 70px;
+    background: #5d4037;
+    border-radius: 0 0 90px 90px;
+    bottom: 90px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.mustache{
+    width:180px;
+    height:180px;
+    border-radius: 50%;
+    position:absolute;
+    color: black;
+    top: 2px;
+    left: 11%;
+    transform: translateX(-50%);
+    box-shadow: 
+        150px 240px 0 0 currentColor,
+        300px 240px 0 0 currentColor;
+}
+
+.mustache::before{
+    content: "";
+    position: absolute;
+    left: 30px;
+    top: 120px;
+    width: 210px;
+    height: 120px;
+    border-bottom: solid 180px currentColor;
+    border-radius: 0 0 0 100%;
+    transform: rotate(-40deg);
+    transform-origin: right 210px;
+}
+
+.mustache::after{
+    content: "";
+    position: absolute;
+    left: 390px;
+    top: 120px;
+    width: 210px;
+    height: 120px;
+    border-bottom: solid 180px currentColor;
+    border-radius: 0 0 100% 0;
+    transform: rotate(40deg);
+    transform-origin: left 210px;
+}
+
+.lentes-contenedor {
+  position: absolute;   
+  top: 530px;           
+  left: 49%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+}
+
+.lente {
+  width: 120px;
+  height: 120px;
+  border: 10px solid #333; 
+  border-radius: 40%; 
+  background-color: rgba(0, 0, 0, 0.1); 
+  box-shadow: inset 0 0 10px rgba(0,0,0,0.5);
+}
+
+.puente {
+  width: 110px;
+  height: 10px;
+  background-color: #333;
+  border-radius: 0 0 10px 10px;
+  margin: 0 -10px; 
+  position: relative;
+  top: -10px; 
+}
