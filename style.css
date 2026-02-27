@@ -99,9 +99,9 @@ body{
 .lente {
   width: 120px;
   height: 120px;
-  border: 10px solid #333; 
+  border: 10px solid #00f; 
   border-radius: 40%; 
-  background-color: rgba(0, 0, 0, 0.1); 
+  background-color: rgba(255, 0, 0, 0.1); 
   box-shadow: inset 0 0 10px rgba(0,0,0,0.5);
 }
 
